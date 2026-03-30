@@ -51,6 +51,6 @@ This repo documents an approach to observing, constraining, and governing macOS 
 
 ## iOS
 iCloud Keychain is not a standalone vault - it is a synchronization layer for eligible Login Keychain items.
-https://developer.apple.com/documentation
-https://developer.apple.com/documentation/technotes/tn3137-on-mac-keychains
+- https://developer.apple.com/documentation
+- https://developer.apple.com/documentation/technotes/tn3137-on-mac-keychains
 
