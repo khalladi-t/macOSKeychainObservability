@@ -8,5 +8,6 @@ Observability, detection, and governance of macOS Login Keychain and iCloud Keyc
 ![Security](https://img.shields.io/badge/focus-Security%20Engineering-critical)
 ![Observability](https://img.shields.io/badge/category-Endpoint%20Observability-blue)
 ![DevSecOps](https://img.shields.io/badge/practice-DevSecOps-brightgreen)
+![Defensive](https://img.shields.io/badge/use-defensive%20only-success)
 
-
+##  Overview
