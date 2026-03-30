@@ -20,3 +20,37 @@ macOS provides strong, privacy‑preserving protections around credential storag
 * Enforce use of approved tools
 
 This repo documents an approach to observing, constraining, and governing macOS Keychain usage without attempting to break, bypass, or disable Apple security settings.
+
+## Focuses
+* Login Keychain
+- [x] User‑accessible credential store
+- [x] Browser‑integrated web passwords
+- [x] Wi‑Fi and application secrets relevant to enterprise auth
+* iCloud Keychain
+- [x] Synchronization and escrow of eligible Login Keychain items
+- [x] Apple ID–backed credential propagation beyond corporate control
+* Associated system processes
+- [x] securityd
+- [x] icloudaccountd
+- [x] CloudKeychainProxy
+- [x] CloudKit‑related services
+* Browser integration surfaces
+- [x] Safari autofill
+- [x] Chromium‑based browser password flows
+- [x] Credential save and retrieve events
+
+
+## ✅ In Scope
+
+| Element                   | Purpose                             |
+|------------------------------|----------------------------------|
+| Login Keychain               | Stores enterprise credentials    |
+| Safari / browser passwords   | Primary user behavior             |
+| iCloud Keychain sync          | Exfiltration & replication path  |
+| Keychain access APIs          | Observability surface             |
+
+## iOS
+iCloud Keychain is not a standalone vault - it is a synchronization layer for eligible Login Keychain items.
+https://developer.apple.com/documentation
+https://developer.apple.com/documentation/technotes/tn3137-on-mac-keychains
+
