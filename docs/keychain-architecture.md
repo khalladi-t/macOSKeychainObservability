@@ -24,27 +24,27 @@ This project focuses on **Layer 1 and Layer 2**, and treats Layer 3 as immutable
 
 ---
 
-## 1. Login Keychain (Primary Scope)
+## 1. Keychain Access
 
 ### Description
 
-The **Login Keychain** is the default keychain associated with a user account.
+The **login keychain** is the default keychain associated with a user account.
 It is unlocked automatically when the user logs in.
 
 ### Characteristics
 
-- User‑level credential store
-- Accessible to user‑approved applications
+- Stored in Keychain Access 
+- Accessible to user‑approved apps
 - Integrated with browsers and autofill services
-- Encrypted with keys derived from the user’s login credentials
-- Stored locally on disk
+- Encrypted with keys derived from the user’s login 
+- Stored locally
 
 ### Common Contents
 
-- Web application credentials
+- Web app credentials
 - Safari saved passwords
 - Browser‑accessible secrets
-- Wi‑Fi credentials (user scope)
+- Wifi credentials (user scope)
 - Application service tokens
 
 ### Security Relevance
@@ -53,7 +53,7 @@ It is unlocked automatically when the user logs in.
 ✅ **This is the source of data for iCloud Keychain synchronization**  
 ✅ **This is the main interaction point for browsers and autofill**
 
-> From an enterprise security perspective, controlling what enters the Login Keychain
+> From an enterprise security perspective, controlling what enters Keychain Access
 > is more impactful than attempting to control how it is stored.
 
 ---
@@ -64,7 +64,7 @@ It is unlocked automatically when the user logs in.
 
 **iCloud Keychain is not a standalone keychain database.**
 
-It is a **synchronization and escrow service** that mirrors eligible items from the Login Keychain
+It is a **synchronization and escrow service** that mirrors eligible items from Keychain Access
 to Apple’s iCloud infrastructure and across trusted devices.
 
 ### Characteristics
@@ -77,7 +77,7 @@ to Apple’s iCloud infrastructure and across trusted devices.
 
 ### Security Relevance
 
-✅ Provides a **replication path** for Login Keychain credentials  
+✅ Provides a **replication path** for Keychain Access credentials  
 ✅ Extends credential availability beyond enterprise‑managed devices  
 ✅ Significantly reduces enterprise visibility and control  
 
@@ -85,7 +85,7 @@ to Apple’s iCloud infrastructure and across trusted devices.
 
 ---
 
-## 3. System Keychain (Out of Scope)
+## 3. Sytems Keychain
 
 ### Description
 
@@ -93,7 +93,7 @@ The **System Keychain** stores credentials used by macOS itself.
 
 ### Characteristics
 
-- Located at `/Library/Keychains/System.keychain`
+- Located at `users ~/Library/Keychains/System.keychain`
 - Used for system services and machine‑level secrets
 - Requires elevated privileges to modify
 - Not used for browser autofill
@@ -106,7 +106,7 @@ The **System Keychain** stores credentials used by macOS itself.
 
 ---
 
-## 4. App‑Specific Keychains (Limited Scope)
+## 4. App Specific Keychains 
 
 ### Description
 
@@ -128,7 +128,7 @@ Application‑scoped Keychain APIs.
 
 ---
 
-## 5. Secure Enclave & Hardware‑Backed Keys (Out of Scope)
+## 5. Secure Enclave & Hardware‑Backed Keys
 
 ### Description
 
@@ -142,11 +142,6 @@ The Secure Enclave protects cryptographic material that never leaves hardware.
 - iCloud Keychain encryption keys
 
 ### Security Position
-
-🚫 Not passwords  
-🚫 Not extractable  
-🚫 Not observable  
-🚫 Not controllable  
 
 These are treated as **hard trust boundaries**.
 
@@ -190,16 +185,13 @@ Credentials typically enter the Login Keychain via browsers.
 - First‑class iCloud Keychain support
 - Autofill tightly coupled with OS services
 
-### Chromium‑Based Browsers (Chrome / Edge)
+### Chromium‑Based Browsers 
 
 - Optional Keychain usage on macOS
 - Can be constrained via policy
 - Observable through browser configuration and behavior
 
 ### Architectural Insight
-
-> If browsers are prevented from saving credentials,
-> the Login Keychain becomes a significantly less attractive storage location.
 
 This is why **browser controls are a primary compensating control**.
 
