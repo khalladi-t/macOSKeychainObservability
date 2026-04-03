@@ -1,6 +1,4 @@
-# Example SIEM Events
-
-## Apple ID Login Event
+# Example SIEM Events: Apple ID Login Event
 
 ```json
 {
