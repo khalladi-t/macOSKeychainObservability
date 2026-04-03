@@ -72,6 +72,7 @@ These signals are especially useful when correlated with:
 - High-signal process for credential sync capability
 
 **Detection Value**
+
 ✅ Running → iCloud services enabled  
 ❌ Not running → iCloud services likely inactive  
 
@@ -94,6 +95,7 @@ These signals are especially useful when correlated with:
 - Useful for detecting runtime state vs static config
 
 **Detection Value**
+
 ✅ Running persistently → iCloud sync active  
 ⚠️ Frequent restarts → configuration changes  
 
