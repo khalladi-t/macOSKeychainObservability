@@ -18,7 +18,7 @@ over aggressive or speculative alerting.
 
 ---
 
-## Detection Philosophy
+## Detection Overview
 
 This repository follows a detection‑first design, not a prevention‑only model.
 
