@@ -1,4 +1,4 @@
-# Policy Guidance – macOS Credential Storage & Password Managers
+# Policy Enforcement
 
 ## Purpose
 
