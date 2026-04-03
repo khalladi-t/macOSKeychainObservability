@@ -44,7 +44,7 @@ The objectives of this policy are to:
 
 ---
 
-## Browser Controls (Primary Enforcement Layer)
+## Browser Controls (EXAMPLE CONTINUED)
 
 Browser enforcement is the **primary technical control**.
 
