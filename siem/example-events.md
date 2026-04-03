@@ -13,4 +13,3 @@
   "source": "macos-keychain-observability",
   "timestamp": "2026-04-03T18:12:00Z"
 }
-``
