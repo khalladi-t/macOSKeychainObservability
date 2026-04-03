@@ -25,7 +25,20 @@ As a result:
 
 This project works **with** those boundaries, not against them.
 Examples of app-level control is GCM: https://github.com/git-ecosystem/git-credential-manager
-> This allows 
+
+
+
+> This allows:
+
+| GCM Capability                   | Scope                            |
+|------------------------------|----------------------------------    |
+| Chooses whether Git uses Keychain               | ✅ App-level      |
+| Controls its own credential items   | ✅ App-level                  |
+| Reads back items it created         | ✅ App-level                  |
+| Prevents Safari from storing passwords         | ❌ Platform-level  |
+| Prevents other apps from using Keychain  | ❌ Platform-level        |
+| Overrides OS autofill behavior    | ❌ Platform-level               |
+| Blocks iCloud Keychain sync globally    | ❌ Platform-level         |
 
 ---
 
