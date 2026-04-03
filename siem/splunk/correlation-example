@@ -1,0 +1,8 @@
+index=endpoint_macos
+(event_subtype=apple_id_login OR
+ event_subtype=keychain_sync_capability OR
+ event_subtype=active_icloud_sync)
+| transaction device_id maxspan=24h
+| search event_subtype=apple_id_login
+        event_subtype=keychain_sync_capability
+        event_subtype=active_icloud_sync
