@@ -55,6 +55,4 @@ The following example demonstrates focused log collection
 for Keychain-related activity:
 
 ```bash
-log stream \
-  --predicate 'process == "securityd"' \
-  --style syslog
+log stream \ --predicate 'process == "securityd"' \ --style syslog
