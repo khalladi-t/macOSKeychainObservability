@@ -2,6 +2,9 @@
 
 Observability, detection, and governance of macOS Login Keychain and iCloud Keychain usage in enterprise environments
 
+<img width="229" height="229" alt="image" src="https://github.com/user-attachments/assets/1a5341f3-c7e2-46c9-bb48-1ed3b14b4299" />
+
+
 ## Getting Started
 
 ![Platform](https://img.shields.io/badge/platform-macOS-black?logo=apple)
