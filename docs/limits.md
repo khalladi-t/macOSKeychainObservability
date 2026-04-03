@@ -26,7 +26,7 @@ As a result:
 This project works **with** those boundaries, not against them.
 Examples of app-level control is GCM: https://github.com/git-ecosystem/git-credential-manager
 
-
+<img width="1378" height="788" alt="image" src="https://github.com/user-attachments/assets/d4e5a641-ebad-4024-81f5-f3b222ad9f10" />
 
 > This allows:
 
