@@ -1,0 +1,3 @@
+index=endpoint_macos sourcetype=macos:keychain:state
+apple_id_present=true
+| stats earliest(_time) as first_seen latest(_time) as last_seen by device_id user
